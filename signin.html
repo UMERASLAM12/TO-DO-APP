@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <div class="login" id="auth-container">
+        <form action="javascript:void(0);">
+          <h3>Register Here!</h3>
+          <label for="input">Email ID</label>
+          <input type="text" name="username" id="id-username" required /><br /><br />
+          <label for="input">Password</label>
+          <input type="password" name="password" id="id-password" required /><br />
+          <label for="input">Confirm Password</label>
+          <input type="password" name="password" id="confirm-password" required /><br />
+          <label for="a">Already Have An Account?</label> 
+          <a href="login.html">Login Here</a>
+          <div class="btn">
+            <button id="register" type="button" onclick="signup()">Register</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

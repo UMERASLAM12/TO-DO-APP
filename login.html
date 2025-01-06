@@ -1,0 +1,39 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>login <form action=""></form></title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="firebaseauth.js"></script>
+      </head>
+
+      <body>
+        <div class="login" id="auth-container">
+          <form action="">
+            <h3>LOGIN HERE !</h3>
+            <label for="input">Email ID</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              required
+            /><br /><br />
+            <label for="input">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+            />
+            <br />
+            <label for="a">dont have an account?</label> <a href="signin.html">create account</a>
+          </form>
+          <div class="btn">
+            <button type="button" onclick="cancelHandler()">cancel</button>
+            <button href="index.html" type="button" onclick="loginHandler()">
+              Login
+            </button>
+          </div>
+        </div>
